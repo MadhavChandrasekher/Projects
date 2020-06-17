@@ -32,7 +32,7 @@ df_candles = st.cache(pd.read_csv)('C:/Users/mccha/Downloads/streamlit_candles.c
 df_candles= df_candles.sort_values(by=['company','product'])
 d=list(df_candles['betabestseller2'])
 y_c=d[0]
-df_earrings = st.cache(pd.read_csv)('C:/Users/mccha/Desktop/desktop folders/clothing store analysis/cleanded_data_earrings_subsample.csv')
+df_earrings = st.cache(pd.read_csv)('https://github.com/MadhavChandrasekher/Projects/blob/master/cleaned_data_earrings_subsample.csv')
 df_earrings = df_earrings.sort_values(by=['company','product'])
 d=list(df_earrings['betabestseller2'])
 y_e=d[0]
