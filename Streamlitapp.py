@@ -36,7 +36,7 @@ df_earrings = st.cache(pd.read_csv)('https://github.com/MadhavChandrasekher/Proj
 df_earrings = df_earrings.sort_values(by=['company','product'])
 d=list(df_earrings['betabestseller2'])
 y_e=d[0]
-df_toys = st.cache(pd.read_csv)('')
+df_toys = st.cache(pd.read_csv)('https://github.com/MadhavChandrasekher/Projects/blob/master/streamlit_woodentoys.csv')
 df_toys = df_toys.sort_values(by=['company','product'])
 d=list(df_toys['betabestseller2'])
 y_t=d[0]
