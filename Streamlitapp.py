@@ -1,3 +1,7 @@
+pip install -r requirements.txt
+
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 matplotlib.use('Agg')
