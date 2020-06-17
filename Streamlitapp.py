@@ -1,6 +1,6 @@
-pip install -r requirements.txt
 
 
+pip install -e 
 
 import matplotlib.pyplot as plt
 import numpy as np
