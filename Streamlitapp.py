@@ -28,7 +28,7 @@ st.title("EtsyEdge")
 #@st.cache
 #def load_toys(path):
 #    return pd.read_csv(path)
-df_candles = st.cache(pd.read_csv)('C:/Users/mccha/Downloads/streamlit_candles.csv') 
+df_candles = st.cache(pd.read_csv)('https://github.com/MadhavChandrasekher/Projects/blob/master/streamlit_candles.csv') 
 df_candles= df_candles.sort_values(by=['company','product'])
 d=list(df_candles['betabestseller2'])
 y_c=d[0]
@@ -36,7 +36,7 @@ df_earrings = st.cache(pd.read_csv)('https://github.com/MadhavChandrasekher/Proj
 df_earrings = df_earrings.sort_values(by=['company','product'])
 d=list(df_earrings['betabestseller2'])
 y_e=d[0]
-df_toys = st.cache(pd.read_csv)('C:/Users/mccha/Downloads/streamlit_woodentoys.csv')
+df_toys = st.cache(pd.read_csv)('')
 df_toys = df_toys.sort_values(by=['company','product'])
 d=list(df_toys['betabestseller2'])
 y_t=d[0]
