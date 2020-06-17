@@ -1,6 +1,6 @@
 
 
-pip install 'https://github.com/MadhavChandrasekher/Projects/blob/master/requirements.txt'
+#pip install https://github.com/MadhavChandrasekher/Projects/blob/master/requirements.txt
 
 import matplotlib.pyplot as plt
 import numpy as np
