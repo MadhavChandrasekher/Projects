@@ -1,21 +1,11 @@
-apt-get matplotlib
-apt-get matplotlib.pyplot as plt
-apt-get numpy as np
-matplotlib.use('Agg')
-apt-get matplotlib.pyplot as plt
-apt-get math
-apt-get pandas as pd
-apt-get numpy as np
-apt-get csv
-apt-get matplotlib.pyplot as plt
-from numpy import loadtxt
-
-apt-get streamlit as st
-apt-get seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier 
-
-from scipy import stats
-from pandas import DataFrame
-
+matplotlib
+numpy
+matplotlib
+math
+pandas
+numpy 
+csv
+streamlit
+seaborn
+sklearn
+scipy
