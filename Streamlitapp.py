@@ -1,9 +1,7 @@
 
 
-#pip install https://github.com/MadhavChandrasekher/Projects/blob/master/requirements.txt
-
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import math
