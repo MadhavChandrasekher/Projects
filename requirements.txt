@@ -1,9 +1,9 @@
-matplotlib
+matplotlib==3.2.1
 math
-pandas
-numpy
+pandas==1.0.4
+numpy==1.18.5
 csv
-seaborn
-sklearn
-scipy 
-streamlit
+seaborn==0.10.1
+scikit-learn==0.23.1
+scipy==1.4.1 
+streamlit==0.61.0
