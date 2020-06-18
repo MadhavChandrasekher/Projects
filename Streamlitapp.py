@@ -73,7 +73,7 @@ def main():
         
         
         if st.sidebar.checkbox('Days since last review'):
-            review_cut = st.slider('Select a reduction in review time',0.0,1.0,0.0)
+            review_cut = st.slider('Select a reduction in review time',0.0,1.0,0.1)
             st.write('You selected a', 100*review_cut, 'percent reduction in review time')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             
