@@ -1,24 +1,21 @@
 
 
 import numpy as np
-import matplotlib.pyplot as plt
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+#matplotlib.use('Agg')
+#import matplotlib.pyplot as plt
 import math
 import pandas as pd
-import numpy as np
 import csv
-import matplotlib.pyplot as plt
 from numpy import loadtxt
 
 import streamlit as st
-import seaborn as sns
+#import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier 
 
 from scipy import stats
-from pandas import DataFrame
  
 
 st.title("EtsyEdge")
@@ -93,11 +90,11 @@ def main():
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
                     
             
-            plt.ylim(0,200)
-            sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
-            plt.title("Days since last review")
-            st.pyplot()
+            #plt.ylim(0,200)
+            #sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
+            #plt.title("Days since last review")
+            #st.pyplot()
             
                         
             
@@ -118,11 +115,11 @@ def main():
             #b=math.floor(b)
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
                
-            plt.ylim(0,200)
-            sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
-            plt.title("Relative price")
-            st.pyplot()
+            #plt.ylim(0,200)
+            #sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
+            #plt.title("Relative price")
+            #st.pyplot()
             
         
         if st.sidebar.checkbox('Shipping'):
@@ -142,11 +139,11 @@ def main():
             #b=math.floor(b)
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
             
-            plt.ylim(0,30)
-            sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
-            plt.title("Days until ship")
-            st.pyplot()
+            #plt.ylim(0,30)
+            #sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
+            #plt.title("Days until ship")
+            #st.pyplot()
              
             
     
@@ -187,11 +184,11 @@ def main():
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
                
             
-            plt.ylim(0,300)
-            sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
-            plt.title("Days since last review")
-            st.pyplot()
+            #plt.ylim(0,300)
+            #sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
+            #plt.title("Days since last review")
+            #st.pyplot()
             
                         
             
@@ -213,11 +210,11 @@ def main():
             #b=math.floor(b)
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
             
-            plt.ylim(0,100)
-            sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
-            plt.title("Relative price")
-            st.pyplot()
+            #plt.ylim(0,100)
+            #sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
+            #plt.title("Relative price")
+            #st.pyplot()
             
         
         if st.sidebar.checkbox('Shipping'):
@@ -237,11 +234,11 @@ def main():
             #b=math.floor(b)
             st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
                   
-            plt.ylim(0,30)
-            sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
-            plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
-            plt.title("Days until ship")
-            st.pyplot()
+            #plt.ylim(0,30)
+            #sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
+            #plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
+            #plt.title("Days until ship")
+            #st.pyplot()
      
 
     elif category == 'Candles':
@@ -281,11 +278,11 @@ def main():
                 st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
             
                 
-                plt.ylim(0,300)
-                sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
-                plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
-                plt.title("Days since last review")
-                st.pyplot()
+                #plt.ylim(0,300)
+                #sns.boxplot(y=df_saved['dayssincelastreview'],fliersize=0,width=0.5).set(ylabel=None)
+                #plt.hlines(dfnew['dayssincelastreview'],-0.35,0.35, color = 'r')
+                #plt.title("Days since last review")
+                #st.pyplot()
                 
                             
                 
@@ -307,11 +304,11 @@ def main():
                 #b=math.floor(b)
                 st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
               
-                plt.ylim(0,100)
-                sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
-                plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
-                plt.title("Relative price")
-                st.pyplot()
+                #plt.ylim(0,100)
+                #sns.boxplot(y=df_saved['currentprice'],fliersize=0,width=0.5).set(ylabel=None)
+                #plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
+                #plt.title("Relative price")
+                #st.pyplot()
                 
             
             if st.sidebar.checkbox('Shipping'):
@@ -330,11 +327,11 @@ def main():
                 #b=math.floor(b)
                 st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
             
-                plt.ylim(0,30)
-                sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
-                plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
-                plt.title("Days until ship")
-                st.pyplot()
+                #plt.ylim(0,30)
+                #sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
+                #plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
+                #plt.title("Days until ship")
+                #st.pyplot()
 
 if __name__ == "__main__":
     main()
