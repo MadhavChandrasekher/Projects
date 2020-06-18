@@ -20,12 +20,12 @@ from scipy import stats
 
 st.title("EtsyEdge")
 
-@st.cache
-def load_earrings(path):
+#@st.cache
+#def load_earrings(path):
 #    return pd.read_csv(path)
-@st.cache
-def load_toys(path):
-    return pd.read_csv(path)
+#@st.cache
+#def load_toys(path):
+#    return pd.read_csv(path)
 df_candles = st.cache(pd.read_csv)('streamlit_candles.csv') 
 df_candles= df_candles.sort_values(by=['company','product'])
 d=list(df_candles['betabestseller2'])
