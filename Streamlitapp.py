@@ -74,7 +74,7 @@ def main():
         
         if st.sidebar.checkbox('Days since last review'):
             review_cut = st.slider('Select a reduction in review time',0.0,1.0,0.1)
-            st.write('You selected a', 100*review_cut, 'percent reduction in review time')
+            st.write('You selected a', round(100*review_cut,2), 'percent reduction in review time')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             
             x_0=lg.predict_proba(arg)[:,1]
@@ -101,7 +101,7 @@ def main():
             
         if st.sidebar.checkbox('Price'):
             price_cut = st.slider('Select a reduction in price',0.0,1.0,0.1)
-            st.write('You selected a', 100*price_cut, 'percent reduction in price')
+            st.write('You selected a', round(100*price_cut,2), 'percent reduction in price')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             x_0=lg.predict_proba(arg)[:,1]
             dfnew[["currentprice"]] = dfnew[["currentprice"]]*(1-price_cut)
@@ -124,7 +124,7 @@ def main():
         
         if st.sidebar.checkbox('Shipping'):
             ship_cut = st.slider('Select a reduction in shipping time',0.0,1.0,0.1)
-            st.write('You selected a', 100*ship_cut, 'percent reduction in shipping time')
+            st.write('You selected a', round(100*ship_cut,2), 'percent reduction in shipping time')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             x_0=lg.predict_proba(arg)[:,1]
            
@@ -169,7 +169,7 @@ def main():
         
         if st.sidebar.checkbox('Days since last review'):
             review_cut = st.slider('Select a reduction in review time',0.0,1.0,0.1)
-            st.write('You selected a', 100*review_cut, 'percent reduction in review time')
+            st.write('You selected a', round(100*review_cut,2), 'percent reduction in review time')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             x_0=lg.predict_proba(arg)[:,1]
            
@@ -195,7 +195,7 @@ def main():
             
         if st.sidebar.checkbox('Price'):
             price_cut = st.slider('Select a reduction in price',0.0,1.0,0.1)
-            st.write('You selected a', 100*price_cut, 'percent reduction in price')
+            st.write('You selected a', round(100*price_cut,2), 'percent reduction in price')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             x_0=lg.predict_proba(arg)[:,1]
            
@@ -219,7 +219,7 @@ def main():
         
         if st.sidebar.checkbox('Shipping'):
             ship_cut = st.slider('Select a reduction in shipping time',0.0,1.0,0.1)
-            st.write('You selected a', 100*ship_cut, 'percent reduction in shipping time')
+            st.write('You selected a', round(100*ship_cut,2), 'percent reduction in shipping time')
             arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
             x_0=lg.predict_proba(arg)[:,1]
            
@@ -263,7 +263,7 @@ def main():
             
             if st.sidebar.checkbox('Days since last review'):
                 review_cut = st.slider('Select a reduction in review time',0.0,1.0,0.1)
-                st.write('You selected a', 100*review_cut, 'percent reduction in review time')
+                st.write('You selected a', round(100*review_cut,2), 'percent reduction in review time')
                 arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
                 x_0=lg.predict_proba(arg)[:,1]
                 dfnew[["dayssincelastreview"]] = dfnew[["dayssincelastreview"]]*(1-review_cut)
@@ -289,7 +289,7 @@ def main():
                 
             if st.sidebar.checkbox('Price'):
                 price_cut = st.slider('Select a reduction in price',0.0,1.0,0.1)
-                st.write('You selected a', 100*price_cut, 'percent reduction in price')
+                st.write('You selected a', round(100*price_cut,2), 'percent reduction in price')
                 arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
                 x_0=lg.predict_proba(arg)[:,1]
               
@@ -314,7 +314,7 @@ def main():
             if st.sidebar.checkbox('Shipping'):
                 
                 ship_cut = st.slider('Select a reduction in shipping time',0.0,1.0,0.1)
-                st.write('You selected a', 100*ship_cut, 'percent reduction in shipping time')
+                st.write('You selected a', round(100*ship_cut,2), 'percent reduction in shipping time')
                 arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
                 x_0=lg.predict_proba(arg)[:,1]
                 
