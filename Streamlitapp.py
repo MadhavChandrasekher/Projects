@@ -1,13 +1,7 @@
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import math
-import pandas as pd
-import numpy as np
 import csv
-import matplotlib.pyplot as plt
 from numpy import loadtxt
 import streamlit as st
 import seaborn as sns
@@ -129,7 +123,7 @@ def main():
                 plt.title("Days until ship")
                 st.pyplot()
         else:
-            st.write('Please choose a company and a product name')
+            st.write('Please choose a category, your company, and your product name')
     elif category == 'Earrings':
         df = df_earrings
         df_saved = df
@@ -201,7 +195,7 @@ def main():
                 plt.title("Days until ship")
                 st.pyplot()
         else:
-            st.write('Please choose a company and a product')
+            st.write('Please choose a category, your company, and your product name')
     elif category == 'Candles':
         df = df_candles
         df_saved = df
