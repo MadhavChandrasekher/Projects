@@ -251,24 +251,24 @@ def main():
                 plt.hlines(dfnew['currentprice'],-0.35,0.35, color = 'r')
                 plt.title("Relative price")
                 st.pyplot()
-            if st.sidebar.checkbox('Shipping'):
-                ship_cut = st.slider('Select a reduction in shipping time',0.0,1.0,.1)
-                st.write('You selected a', round(100*ship_cut,2), 'percent reduction in shipping time')
-                arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
-                x_0=lg.predict_proba(arg)[:,1]
-                dfnew[["daysuntilship"]] = dfnew[["daysuntilship"]]*(1-ship_cut)
-                arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
-                x=lg.predict_proba(arg)[:,1]
-                b=x-x_0
-                b = b*y_c
-                b=math.floor(b)
-                #b=math.floor(b)
-                st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
-                plt.ylim(0,30)
-                sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
-                plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
-                plt.title("Days until ship")
-                st.pyplot()
+#            if st.sidebar.checkbox('Shipping'):
+#                ship_cut = st.slider('Select a reduction in shipping time',0.0,1.0,.1)
+#                st.write('You selected a', round(100*ship_cut,2), 'percent reduction in shipping time')
+#                arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
+#                x_0=lg.predict_proba(arg)[:,1]
+#                dfnew[["daysuntilship"]] = dfnew[["daysuntilship"]]*(1-ship_cut)
+#                arg = dfnew[["currentprice", "freeshipping2","foreign","etsysince2","dayssincelastreview","daysuntilship","numberofreviews2"]]
+#                x=lg.predict_proba(arg)[:,1]
+#                b=x-x_0
+#                b = b*y_c
+#                b=math.floor(b)
+#                #b=math.floor(b)
+#                st.write('This reduction gives you a', x, 'chance of attaining the bestseller badge and an increase of', b, 'units of store-level sales!')
+#                plt.ylim(0,30)
+#                sns.boxplot(y=df_saved['daysuntilship'],fliersize=0,width=0.5).set(ylabel=None)
+#                plt.hlines(dfnew['daysuntilship'],-0.35,0.35, color = 'r')
+#                plt.title("Days until ship")
+#                st.pyplot()
         else:
             st.write('Please choose a category, your company, and your product name')
 if __name__ == "__main__":
