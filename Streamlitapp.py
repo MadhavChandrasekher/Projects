@@ -269,6 +269,6 @@ def main():
                 plt.title("Days until ship")
                 st.pyplot()
         else:
-            st.write('Please choose a company and a product')
+            st.write('Please choose a category, your company, and your product name')
 if __name__ == "__main__":
     main()
