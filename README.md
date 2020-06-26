@@ -37,7 +37,7 @@ The model and analysis are stored in the following folder,
 	- script `Stats.py` which generates all descriptive statistics and box plots appearing in the slide deck.
 	
 ## Running the app
-The web app, EtsyEdge, is scripted in *Streamlit*. The main projects folder contains the four documents needed to run the app. `Streamlitapp.py` runs the app and `streamlit_candles.csv`, `streamlit_earrings.csv`, `cleaned_data_logit_subsample.csv` are the (cleaned) data files used for the app.
+The web app, EtsyEdge, is scripted in *Streamlit*. The main projects folder contains the four documents needed to run the app. `Streamlitapp.py` runs the app and `streamlit_candles.csv`, `streamlit_woodentoys.csv`, `cleaned_data_earrings_subsample.csv` are the (cleaned) data files used for the app.
   
 	
 
