@@ -4,36 +4,20 @@ This repository collects the data and scripts used to assemble my Insight Data S
 ## Overview
 Etsy is the single largest platform for sellers of handmade goods, with a growing seller base that numbers in the millions. EtsyEdge is a tool which allows an individual seller to see how his or her products measure up against the competition. This information feeds into a machine learning model which makes recommendations to increase future sales.
 
-### Step 1: Identify competitive gaps
+### Step 1: Identify competitive gaps 
+<br />
 
-![Picture1](https://github.com/MadhavChandrasekher/Projects/blob/master/Pictures/Picture1.png)
-
-
-
+![](https://github.com/MadhavChandrasekher/Projects/blob/master/Pictures/PictureFinal1.png)
 
 
 
 
+<br />
 
+### Step 2: Predict sales increases 
+<br />
 
-
-
-
-
-
-
-### Step 2: Predict sales increases
-
-
-
-
-
-
-
-
-
-
-
+![](https://github.com/MadhavChandrasekher/Projects/blob/master/Pictures/PictureFinal2.png)
 
 ## Data
 I collected data by scraping seller pages on the Etsy website using *Beautiful Soup*. I did not use Etsy's proprietary API since it comes with both restrictions on content and the number of daily requests. Sellers are grouped by product category and I scraped four categories: candles, earrings, wooden name puzzle toys, and baby toys. Categories were chosen on the basis of two criteria. First, they had to be large enough to admit reasonable statistical inference. Second, items in a category had to be similar enough so that they could be considered competitors. Raw data and scraping scripts are available in the following two folders,
