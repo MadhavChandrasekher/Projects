@@ -32,7 +32,7 @@ I collected data by scraping seller pages on the Etsy website using *Beautiful S
   
 ## Analysis
 The model and analysis are stored in the following folder,
-* #### ~/SCripts/Models
+* #### ~/Scripts/Models
 	- script `Analysis.py` which generates results from ML algorithms and related regression results.   
 	- script `Stats.py' which generates all descriptive statistics and box plots appearing in the slide deck.
 	
