@@ -1,5 +1,5 @@
 # EtsyEdge: A predictive tool for sellers on the Etsy platform
-This repository collects the data and scripts used to assemble my Insight Data Science project. The completed product is viewable [here](http://www.insightetsy.site) and slides which accompany the product demonstration are [here](https://docs.google.com/presentation/d/1TveW6OcEcbtEsvoqgeiciuSwDoYenJMXrOXGLqTVfEE/edit).
+This repository collects the data and scripts used to build my Insight Data Science project. The completed product is viewable [here](http://www.insightetsy.site) and slides which accompany the product demonstration are [here](https://docs.google.com/presentation/d/1TveW6OcEcbtEsvoqgeiciuSwDoYenJMXrOXGLqTVfEE/edit).
 
 ## Overview
 Etsy is the single largest platform for sellers of handmade goods, with a growing seller base that numbers in the millions. EtsyEdge is a tool which allows an individual seller to see how his or her products measure up against the competition. This information feeds into a machine learning model which makes recommendations to increase future sales.
