@@ -6,6 +6,7 @@ Etsy is the single largest platform for sellers of handmade goods, with a growin
 
 ### Step 1: Identify competitive gaps
 
+![Picture1](https://github.com/MadhavChandrasekher/Projects/blob/master/Pictures/Picture1.png)
 
 
 
