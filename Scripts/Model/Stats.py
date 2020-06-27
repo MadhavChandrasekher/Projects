@@ -30,7 +30,7 @@ from imblearn.pipeline import Pipeline
 
 
 #CANDLES
-data = pd.read_csv('C:\\Users\\acann\\Dropbox\\Insight\\Python\\Etsy\\Project Folder Candles\\cleaned_data_logit_subsample_candles.csv')
+data = pd.read_csv('streamlit_candles.csv')
 list(data.columns)
 data=data.rename(columns={'bestseller2':'bestseller', 'sales2':'sales','numberofreviews2':'numberofreviews'})
 data.head()
@@ -65,7 +65,7 @@ plt.title('Price by Bestseller Badge',fontsize=16)
 
 
 #EARRINGS
-data = pd.read_csv('C:\\Users\\acann\\Dropbox\\Insight\\Python\\Etsy\\Project Folder Earrings\\cleaned_data_logit_subsample_earrings.csv')
+data = pd.read_csv('cleaned_data_earrings_subsample.csv')
 list(data.columns)
 data=data.rename(columns={'bestseller2':'bestseller', 'sales2':'sales','numberofreviews2':'numberofreviews'})
 data.head()
@@ -101,7 +101,7 @@ plt.title('Price by Bestseller Badge',fontsize=16)
 
 
 #WOODEN NAMED PUZZLE TOYS
-data = pd.read_csv('C:\\Users\\acann\\Dropbox\\Insight\\Python\\Etsy\\Project Folder Wooden Named Toys\\cleaned_data_logit_subsample_hasoptions.csv')
+data = pd.read_csv('streamlit_woodentoys.csv')
 list(data.columns)
 data=data.rename(columns={'bestseller2':'bestseller', 'sales2':'sales','numberofreviews2':'numberofreviews'})
 data.head()
