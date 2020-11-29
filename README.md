@@ -1,4 +1,4 @@
-# EtsyEdge: A predictive tool for sellers on the Etsy platform
+# EtsyEdge: A predictive tool for sellers on the Etsy platform [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/madhavchandrasekher/projects/master/Streamlitapp.py)
 This repository collects the data and scripts used to build my Insight Data Science project. The completed product is viewable [here](http://www.insightetsy.site) and slides which accompany the product demonstration are [here](https://docs.google.com/presentation/d/1TveW6OcEcbtEsvoqgeiciuSwDoYenJMXrOXGLqTVfEE/edit).
 
 ## Overview
